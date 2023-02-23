@@ -1,38 +1,59 @@
-.App {
-  text-align: center;
+
+
+.pagination-company{
+  margin-left: 50%;
+  top: 90vh;
+  position: fixed;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.pagination-company > li {
+  display: inline-block;
+  padding-left: 0;
+}
+.pagination-company > li {
+  list-style: none;
+}
+.pagination-company > li > a,
+.pagination-company > li > span {
+  position: relative;
+  float: left;
+  padding: 6px 12px;
+  line-height: 1.42857143;
+  text-decoration: none;
+  color: #2c689c;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  margin-left: -1px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.pagination-company>li.active>a {
+  color: #fff;
+  background-color: #218838;
+  border-color: #1e7e34;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+/* Style the active class (and buttons on mouse-over) */
+.pagination-company > li > a:hover {
+  background-color:  #B0B3B5;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.pagination-company > li:first-child > a,
+.pagination-company > li:first-child > span {
+  margin-left: 0;
+  padding: 0px;
+  border-bottom-left-radius: 4px;
+  border-top-left-radius: 4px;
+  display: none!important;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.pagination-company > li:last-child > a,
+.pagination-company > li:last-child > span {
+  border-bottom-right-radius: 4px;
+  margin-right: 0;
+  padding: 0px!important;
+  border-top-right-radius: 4px;
+  display: none!important;
+}
+#a:hover{
+  background-color: rgba(56, 54, 55, 0.1);
+  border-radius: 50px;
 }
